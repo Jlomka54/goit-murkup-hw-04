@@ -388,6 +388,9 @@ ul {
   letter-spacing: 0.02em;
   color: #fff;
 }
+.page-footer .container {
+  padding-left: 156px;
+}
 .footer-list {
   display: flex;
   gap: 16px;
