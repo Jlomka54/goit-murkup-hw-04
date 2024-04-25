@@ -118,7 +118,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-..contacts-link li {
+.contacts-link li {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
