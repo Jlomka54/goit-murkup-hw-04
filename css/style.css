@@ -86,12 +86,19 @@ body {
   padding: 24px 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-link:nth-child(1) {
+  position: relative;
+  color: #404bbf;
+}
 .header-link:hover,
 .header-link:focus {
   color: #404bbf;
 }
-.header-link:hover::after {
+.header-link::after {
+  position: absolute;
   display: block;
+  left: 0;
+  bottom: -1px;
   content: "";
   width: 100%;
   height: 4px;
@@ -118,7 +125,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.contacts-link li {
+.contacts-link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover,
@@ -139,10 +146,11 @@ ul {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/people-office.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
   background-position: center;
-  max-width: 1440px;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 700;
@@ -155,7 +163,6 @@ ul {
   letter-spacing: 0.02em;
 }
 .button {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   align-items: center;
   margin: 0 auto;
@@ -172,6 +179,7 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   font-family: "Roboto", sans-serif;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -264,10 +272,12 @@ ul {
 
   background-color: #ffffff;
 }
-.people-info {
-  padding: 32px 0;
+.team-info {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.people-info {
+  padding: 32px 0;
 }
 .people-info .list-title {
   font-weight: 500;
