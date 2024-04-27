@@ -25,6 +25,7 @@ body {
   color: #2e2f42;
   background-color: #ffffff;
 }
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -453,9 +454,6 @@ ul {
   align-items: baseline;
 }
 .logo-paragraph-container {
-  display: block;
-  min-width: 264px;
-  padding-left: 156px;
   margin-right: 120px;
 }
 .footer-social-contact {
